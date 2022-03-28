@@ -1,7 +1,7 @@
 ﻿
 namespace SWE_Final_Project
 {
-    partial class Form1
+    partial class CheckForParkingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,19 @@ namespace SWE_Final_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // CheckForParkingForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "CheckForParkingForm";
+            this.Text = "Check For Parking";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
