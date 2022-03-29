@@ -16,5 +16,10 @@ namespace SWE_Final_Project
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
