@@ -58,11 +58,29 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyPointsForm.cs">
+    <Compile Include="Lot1_Formcs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyPointsForm.Designer.cs">
-      <DependentUpon>MyPointsForm.cs</DependentUpon>
+    <Compile Include="Lot1_Formcs.Designer.cs">
+      <DependentUpon>Lot1_Formcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lot2_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lot2_Form.Designer.cs">
+      <DependentUpon>Lot2_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lot3_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lot3_Form.Designer.cs">
+      <DependentUpon>Lot3_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lot4_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lot4_Form.Designer.cs">
+      <DependentUpon>Lot4_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="MyVehiclesForm.cs">
       <SubType>Form</SubType>
@@ -78,20 +96,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReserveParkingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReserveParkingForm.Designer.cs">
-      <DependentUpon>ReserveParkingForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CheckForParkingForm.resx">
       <DependentUpon>CheckForParkingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyPointsForm.resx">
-      <DependentUpon>MyPointsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyVehiclesForm.resx">
       <DependentUpon>MyVehiclesForm.cs</DependentUpon>
@@ -108,9 +117,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReserveParkingForm.resx">
-      <DependentUpon>ReserveParkingForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

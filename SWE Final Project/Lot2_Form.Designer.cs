@@ -1,7 +1,7 @@
 ﻿
 namespace SWE_Final_Project
 {
-    partial class MyPointsForm
+    partial class Lot2_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace SWE_Final_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // MyPointsForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "MyPointsForm";
-            this.Text = "My Points";
-            this.ResumeLayout(false);
-
+            this.Text = "Lot2_Form";
         }
 
         #endregion

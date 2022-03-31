@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SWE_Final_Project
 {
-    public partial class ReserveParkingForm : Form
+    public partial class Lot1_Formcs : Form
     {
-        public ReserveParkingForm()
+        public Lot1_Formcs()
         {
             InitializeComponent();
         }

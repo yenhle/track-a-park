@@ -1,7 +1,7 @@
 ﻿
 namespace SWE_Final_Project
 {
-    partial class ReserveParkingForm
+    partial class Lot3_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace SWE_Final_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // ReserveParkingForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ReserveParkingForm";
-            this.Text = "Reserve Parking";
-            this.ResumeLayout(false);
-
+            this.Text = "Lot3_Form";
         }
 
         #endregion
