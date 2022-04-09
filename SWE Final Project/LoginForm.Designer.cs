@@ -81,6 +81,7 @@ namespace SWE_Final_Project
             this.Butt_Login.TabIndex = 4;
             this.Butt_Login.Text = "Login";
             this.Butt_Login.UseVisualStyleBackColor = true;
+            this.Butt_Login.Click += new System.EventHandler(this.Butt_Login_Click);
             // 
             // Butt_Register
             // 
@@ -91,6 +92,7 @@ namespace SWE_Final_Project
             this.Butt_Register.TabIndex = 5;
             this.Butt_Register.Text = "Register";
             this.Butt_Register.UseVisualStyleBackColor = true;
+            this.Butt_Register.Click += new System.EventHandler(this.Butt_Register_Click);
             // 
             // label1
             // 

@@ -43,6 +43,7 @@ namespace SWE_Final_Project
             this.Butt_MyVehicles.TabIndex = 0;
             this.Butt_MyVehicles.Text = "My Vehicles";
             this.Butt_MyVehicles.UseVisualStyleBackColor = true;
+            this.Butt_MyVehicles.Click += new System.EventHandler(this.Butt_MyVehicles_Click);
             // 
             // Butt_ChkForParking
             // 
@@ -53,6 +54,7 @@ namespace SWE_Final_Project
             this.Butt_ChkForParking.TabIndex = 2;
             this.Butt_ChkForParking.Text = "Check for Parking";
             this.Butt_ChkForParking.UseVisualStyleBackColor = true;
+            this.Butt_ChkForParking.Click += new System.EventHandler(this.Butt_ChkForParking_Click);
             // 
             // Lb_CurrentPoints
             // 

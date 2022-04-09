@@ -37,6 +37,7 @@ namespace SWE_Final_Project
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Butt_GoToProf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -45,7 +46,7 @@ namespace SWE_Final_Project
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(48, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 122);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 90);
             this.pictureBox1.TabIndex = 1;
@@ -53,7 +54,7 @@ namespace SWE_Final_Project
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(215, 93);
+            this.pictureBox2.Location = new System.Drawing.Point(205, 122);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(110, 90);
             this.pictureBox2.TabIndex = 2;
@@ -61,7 +62,7 @@ namespace SWE_Final_Project
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(571, 93);
+            this.pictureBox3.Location = new System.Drawing.Point(561, 122);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(110, 90);
             this.pictureBox3.TabIndex = 4;
@@ -69,7 +70,7 @@ namespace SWE_Final_Project
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(404, 93);
+            this.pictureBox4.Location = new System.Drawing.Point(394, 122);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(110, 90);
             this.pictureBox4.TabIndex = 3;
@@ -78,7 +79,7 @@ namespace SWE_Final_Project
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 77);
+            this.label1.Location = new System.Drawing.Point(35, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 5;
@@ -87,7 +88,7 @@ namespace SWE_Final_Project
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(212, 77);
+            this.label2.Location = new System.Drawing.Point(202, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 6;
@@ -96,7 +97,7 @@ namespace SWE_Final_Project
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(401, 77);
+            this.label3.Location = new System.Drawing.Point(391, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 7;
@@ -105,17 +106,28 @@ namespace SWE_Final_Project
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(568, 77);
+            this.label4.Location = new System.Drawing.Point(558, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Lot 4";
+            // 
+            // Butt_GoToProf
+            // 
+            this.Butt_GoToProf.Location = new System.Drawing.Point(22, 12);
+            this.Butt_GoToProf.Name = "Butt_GoToProf";
+            this.Butt_GoToProf.Size = new System.Drawing.Size(108, 61);
+            this.Butt_GoToProf.TabIndex = 9;
+            this.Butt_GoToProf.Text = "Go To Profile";
+            this.Butt_GoToProf.UseVisualStyleBackColor = true;
+            this.Butt_GoToProf.Click += new System.EventHandler(this.Butt_GoToProf_Click);
             // 
             // CheckForParkingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 312);
+            this.Controls.Add(this.Butt_GoToProf);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -144,5 +156,6 @@ namespace SWE_Final_Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button Butt_GoToProf;
     }
 }

@@ -16,5 +16,19 @@ namespace SWE_Final_Project
         {
             InitializeComponent();
         }
+
+        private void Butt_GoToProf_Click(object sender, EventArgs e)
+        {
+
+            this.Hide(); // Hides the current form.
+            ProfileForm vehicForm = new ProfileForm();
+            vehicForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
+            vehicForm.Show(); //Show Prof form
+            /* NOTE:
+             * Froms will not communicate between each other
+             * They are only used to navigate
+             * So a new instance of the form is created every time you navigate.
+             */
+        }
     }
 }

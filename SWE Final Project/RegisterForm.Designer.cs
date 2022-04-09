@@ -1,7 +1,7 @@
 ﻿
 namespace SWE_Final_Project
 {
-    partial class Lot1_Formcs
+    partial class RegisterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,9 @@ namespace SWE_Final_Project
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            
-
+            this.Text = "RegisterForm";
         }
 
-    }
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        #endregion
     }
 }
