@@ -3,6 +3,7 @@ namespace SWE_Final_Project
 {
     partial class ProfileForm
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
