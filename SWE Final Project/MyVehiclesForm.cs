@@ -22,9 +22,9 @@ namespace SWE_Final_Project
         {
 
             this.Hide(); // Hides the current form.
-            ProfileForm vehicForm = new ProfileForm();
-            vehicForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
-            vehicForm.Show(); //Show Prof form
+            ProfileForm profForm = new ProfileForm();
+            profForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
+            profForm.Show(); //Show Prof form
             /* NOTE:
              * Froms will not communicate between each other
              * They are only used to navigate

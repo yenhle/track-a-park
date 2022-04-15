@@ -36,10 +36,12 @@ namespace SWE_Final_Project
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.vColor = new System.Windows.Forms.TextBox();
+            this.vModel = new System.Windows.Forms.TextBox();
+            this.vMake = new System.Windows.Forms.TextBox();
+            this.licensePlate = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -90,50 +92,75 @@ namespace SWE_Final_Project
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(231, 357);
+            this.button1.Location = new System.Drawing.Point(248, 357);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 72);
             this.button1.TabIndex = 4;
             this.button1.Text = "Register Vehicle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // vColor
             // 
-            this.textBox1.Location = new System.Drawing.Point(248, 284);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 5;
+            this.vColor.Location = new System.Drawing.Point(248, 284);
+            this.vColor.Name = "vColor";
+            this.vColor.Size = new System.Drawing.Size(206, 20);
+            this.vColor.TabIndex = 5;
             // 
-            // textBox2
+            // vModel
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 6;
+            this.vModel.Location = new System.Drawing.Point(248, 201);
+            this.vModel.Name = "vModel";
+            this.vModel.Size = new System.Drawing.Size(206, 20);
+            this.vModel.TabIndex = 6;
             // 
-            // textBox3
+            // vMake
             // 
-            this.textBox3.Location = new System.Drawing.Point(248, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 7;
+            this.vMake.Location = new System.Drawing.Point(248, 122);
+            this.vMake.Name = "vMake";
+            this.vMake.Size = new System.Drawing.Size(206, 20);
+            this.vMake.TabIndex = 7;
             // 
-            // textBox4
+            // licensePlate
             // 
-            this.textBox4.Location = new System.Drawing.Point(248, 50);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 20);
-            this.textBox4.TabIndex = 8;
+            this.licensePlate.Location = new System.Drawing.Point(248, 50);
+            this.licensePlate.Name = "licensePlate";
+            this.licensePlate.Size = new System.Drawing.Size(206, 20);
+            this.licensePlate.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 357);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(206, 72);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "My Vehicles";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(485, 357);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(206, 72);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Go To Profile";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // RegisterVehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 473);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(735, 473);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.licensePlate);
+            this.Controls.Add(this.vMake);
+            this.Controls.Add(this.vModel);
+            this.Controls.Add(this.vColor);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -154,9 +181,11 @@ namespace SWE_Final_Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox vColor;
+        private System.Windows.Forms.TextBox vModel;
+        private System.Windows.Forms.TextBox vMake;
+        private System.Windows.Forms.TextBox licensePlate;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
