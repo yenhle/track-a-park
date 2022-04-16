@@ -34,5 +34,41 @@ namespace SWE_Final_Project
              * So a new instance of the form is created every time you navigate.
              */
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           Lot1_Form F = new Lot1_Form();
+
+            //F.Availablelot();
+            MessageBox.Show(F.Availablelot().ToString());
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Change the Lotfor # here (Lot2_Form())
+            Lot1_Form F = new Lot1_Form();
+
+            //F.Availablelot();
+            MessageBox.Show(F.Availablelot().ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Change the Lotfor # here (Lot3_Form())
+            Lot1_Form F = new Lot1_Form();
+
+            //F.Availablelot();
+            MessageBox.Show(F.Availablelot().ToString());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Change the Lotfor # here (Lot4_Form())
+            Lot1_Form F = new Lot1_Form();
+
+            //F.Availablelot();
+            MessageBox.Show(F.Availablelot().ToString());
+        }
     }
 }
