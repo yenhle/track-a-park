@@ -12,9 +12,33 @@ namespace SWE_Final_Project
 {
     public partial class Lot_B_Form : Form
     {
+        int capacity = 10;
+        int capacityfull = 0;
+        static int temp = 0;
         public Lot_B_Form()
         {
             InitializeComponent();
+            CHK_B1.Checked = false;
+            CHK_B2.Checked = false;
+            CHK_B3.Checked = false;
+            CHK_B4.Checked = true;
+            CHK_B5.Checked = false;
+            CHK_B6.Checked = true;
+            CHK_B7.Checked = false;
+            CHK_B8.Checked = true;
+            CHK_B9.Checked = true;
+            CHK_B10.Checked = true;
+
+            CHK_B1.Enabled = false;
+            CHK_B2.Enabled = false;
+            CHK_B3.Enabled = false;
+            CHK_B4.Enabled = false;
+            CHK_B5.Enabled = false;
+            CHK_B6.Enabled = false;
+            CHK_B7.Enabled = false;
+            CHK_B8.Enabled = false;
+            CHK_B9.Enabled = false;
+            CHK_B10.Enabled = false;
         }
 
         private void Lot_B_Form_Load(object sender, EventArgs e)
@@ -152,23 +176,33 @@ namespace SWE_Final_Project
             }
         }
 
-        public int Availablelot()
+        public void Availablelot()
         {
 
             if (capacityfull == capacity)
             {
                 MessageBox.Show("This Lot is currently full");
-                return 0;
+                
             }
             else
             {
-                return capacity - capacityfull;
+                temp = capacity - capacityfull;
+                MessageBox.Show(temp.ToString() + " Spots Remaining.");
             }
 
         }
-        private void Butt_CHK_B_Click(object sender, EventArgs e)
+       
+        private void Butt_CHK_A_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Availablelot().ToString());
+            Availablelot();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Hides the current form.
+            CheckForParkingForm P = new CheckForParkingForm();
+            P.Closed += (s, args) => this.Close();
+            P.Show();
         }
     }
 }

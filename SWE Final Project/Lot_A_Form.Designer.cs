@@ -40,6 +40,7 @@ namespace SWE_Final_Project
             this.CHK_A9 = new System.Windows.Forms.CheckBox();
             this.CHK_A10 = new System.Windows.Forms.CheckBox();
             this.Butt_CHK_A = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CHK_A1
@@ -154,19 +155,30 @@ namespace SWE_Final_Project
             // 
             // Butt_CHK_A
             // 
-            this.Butt_CHK_A.Location = new System.Drawing.Point(346, 343);
+            this.Butt_CHK_A.Location = new System.Drawing.Point(80, 318);
             this.Butt_CHK_A.Name = "Butt_CHK_A";
-            this.Butt_CHK_A.Size = new System.Drawing.Size(75, 23);
+            this.Butt_CHK_A.Size = new System.Drawing.Size(151, 66);
             this.Butt_CHK_A.TabIndex = 10;
-            this.Butt_CHK_A.Text = "Check";
+            this.Butt_CHK_A.Text = "Check for Parking";
             this.Butt_CHK_A.UseVisualStyleBackColor = true;
             this.Butt_CHK_A.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(470, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 66);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Go Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Lot_A_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Butt_CHK_A);
             this.Controls.Add(this.CHK_A10);
             this.Controls.Add(this.CHK_A9);
@@ -199,9 +211,8 @@ namespace SWE_Final_Project
         private System.Windows.Forms.CheckBox CHK_A9;
         private System.Windows.Forms.CheckBox CHK_A10;
 
-        int capacity = 10;
-        int capacityfull = 0;
         private System.Windows.Forms.Button Butt_CHK_A;
+        private System.Windows.Forms.Button button1;
     }
 
          

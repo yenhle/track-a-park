@@ -29,7 +29,6 @@ namespace SWE_Final_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.Butt_CHK_D = new System.Windows.Forms.Button();
             this.CHK_D10 = new System.Windows.Forms.CheckBox();
             this.CHK_D9 = new System.Windows.Forms.CheckBox();
             this.CHK_D8 = new System.Windows.Forms.CheckBox();
@@ -40,17 +39,9 @@ namespace SWE_Final_Project
             this.CHK_D3 = new System.Windows.Forms.CheckBox();
             this.CHK_D2 = new System.Windows.Forms.CheckBox();
             this.CHK_D1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Butt_CHK_A = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Butt_CHK_D
-            // 
-            this.Butt_CHK_D.Location = new System.Drawing.Point(396, 352);
-            this.Butt_CHK_D.Name = "Butt_CHK_D";
-            this.Butt_CHK_D.Size = new System.Drawing.Size(75, 23);
-            this.Butt_CHK_D.TabIndex = 21;
-            this.Butt_CHK_D.Text = "Check";
-            this.Butt_CHK_D.UseVisualStyleBackColor = true;
-            this.Butt_CHK_D.Click += new System.EventHandler(this.Butt_CHK_D_Click);
             // 
             // CHK_D10
             // 
@@ -162,12 +153,33 @@ namespace SWE_Final_Project
             this.CHK_D1.UseVisualStyleBackColor = true;
             this.CHK_D1.CheckedChanged += new System.EventHandler(this.CHK_D1_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(520, 337);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 66);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Go Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Butt_CHK_A
+            // 
+            this.Butt_CHK_A.Location = new System.Drawing.Point(130, 337);
+            this.Butt_CHK_A.Name = "Butt_CHK_A";
+            this.Butt_CHK_A.Size = new System.Drawing.Size(151, 66);
+            this.Butt_CHK_A.TabIndex = 21;
+            this.Butt_CHK_A.Text = "Check for Parking";
+            this.Butt_CHK_A.UseVisualStyleBackColor = true;
+            this.Butt_CHK_A.Click += new System.EventHandler(this.Butt_CHK_A_Click);
+            // 
             // Lot_D_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Butt_CHK_D);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Butt_CHK_A);
             this.Controls.Add(this.CHK_D10);
             this.Controls.Add(this.CHK_D9);
             this.Controls.Add(this.CHK_D8);
@@ -186,8 +198,6 @@ namespace SWE_Final_Project
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Butt_CHK_D;
         private System.Windows.Forms.CheckBox CHK_D10;
         private System.Windows.Forms.CheckBox CHK_D9;
         private System.Windows.Forms.CheckBox CHK_D8;
@@ -199,7 +209,8 @@ namespace SWE_Final_Project
         private System.Windows.Forms.CheckBox CHK_D2;
         private System.Windows.Forms.CheckBox CHK_D1;
 
-        int capacity = 10;
-        int capacityfull = 0;
+        
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Butt_CHK_A;
     }
 }

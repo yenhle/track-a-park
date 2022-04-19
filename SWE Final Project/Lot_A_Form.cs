@@ -12,19 +12,45 @@ namespace SWE_Final_Project
 {
     public partial class Lot_A_Form : Form
     {
+        int capacity = 10;
+        int capacityfull = 0;
+        static int temp = 0;
+
         public Lot_A_Form()
         {
             InitializeComponent();
+            CHK_A1.Checked = true;
+            CHK_A2.Checked = false;
+            CHK_A3.Checked = false;
+            CHK_A4.Checked = true;
+            CHK_A5.Checked = false;
+            CHK_A6.Checked = false;
+            CHK_A7.Checked = true;
+            CHK_A8.Checked = true;
+            CHK_A9.Checked = false;
+            CHK_A10.Checked = false;
+
+            CHK_A1.Enabled = false;
+            CHK_A2.Enabled = false;
+            CHK_A3.Enabled = false;
+            CHK_A4.Enabled = false;
+            CHK_A5.Enabled = false;
+            CHK_A6.Enabled = false;
+            CHK_A7.Enabled = false;
+            CHK_A8.Enabled = false;
+            CHK_A9.Enabled = false;
+            CHK_A10.Enabled = false;
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(capacityfull == 10)
+            if (capacityfull == 10)
             {
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if(CHK_A1.Checked)
+            else if (CHK_A1.Checked)
             {
                 capacityfull++;
             }
@@ -147,29 +173,37 @@ namespace SWE_Final_Project
             }
         }
 
-        public int Availablelot()
+        public void Availablelot()
         {
-            
-            if(capacityfull == capacity)
+
+            if ((capacityfull) == capacity)
             {
                 MessageBox.Show("This Lot is currently full");
-                return 0;
             }
-            else 
-            { 
-                return capacity - capacityfull;
+            else
+            {
+                temp = capacity - (capacityfull);
+                MessageBox.Show(temp.ToString() + " Spots Remaining.");
             }
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Availablelot().ToString());
+            Availablelot();
         }
 
         private void Lot_A_Form_Load(object sender, EventArgs e)
         {
+        }
 
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Hide(); // Hides the current form.
+            CheckForParkingForm P = new CheckForParkingForm();
+            P.Closed += (s, args) => this.Close();
+            P.Show();
         }
     }
 }
