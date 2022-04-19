@@ -42,6 +42,8 @@ namespace SWE_Final_Project
             this.licensePlate = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.vYear = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -63,7 +65,7 @@ namespace SWE_Final_Project
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 118);
+            this.label2.Location = new System.Drawing.Point(99, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 24);
             this.label2.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace SWE_Final_Project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(91, 197);
+            this.label3.Location = new System.Drawing.Point(91, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 24);
             this.label3.TabIndex = 2;
@@ -83,7 +85,7 @@ namespace SWE_Final_Project
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(99, 280);
+            this.label4.Location = new System.Drawing.Point(99, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 24);
             this.label4.TabIndex = 3;
@@ -102,21 +104,21 @@ namespace SWE_Final_Project
             // 
             // vColor
             // 
-            this.vColor.Location = new System.Drawing.Point(248, 284);
+            this.vColor.Location = new System.Drawing.Point(248, 205);
             this.vColor.Name = "vColor";
             this.vColor.Size = new System.Drawing.Size(206, 20);
             this.vColor.TabIndex = 5;
             // 
             // vModel
             // 
-            this.vModel.Location = new System.Drawing.Point(248, 201);
+            this.vModel.Location = new System.Drawing.Point(248, 156);
             this.vModel.Name = "vModel";
             this.vModel.Size = new System.Drawing.Size(206, 20);
             this.vModel.TabIndex = 6;
             // 
             // vMake
             // 
-            this.vMake.Location = new System.Drawing.Point(248, 122);
+            this.vMake.Location = new System.Drawing.Point(248, 100);
             this.vMake.Name = "vMake";
             this.vMake.Size = new System.Drawing.Size(206, 20);
             this.vMake.TabIndex = 7;
@@ -150,11 +152,30 @@ namespace SWE_Final_Project
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(99, 251);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(136, 24);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Vehicle Year:";
+            // 
+            // vYear
+            // 
+            this.vYear.Location = new System.Drawing.Point(248, 255);
+            this.vYear.Name = "vYear";
+            this.vYear.Size = new System.Drawing.Size(206, 20);
+            this.vYear.TabIndex = 12;
+            // 
             // RegisterVehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 473);
+            this.Controls.Add(this.vYear);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.licensePlate);
@@ -187,5 +208,7 @@ namespace SWE_Final_Project
         private System.Windows.Forms.TextBox licensePlate;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox vYear;
     }
 }

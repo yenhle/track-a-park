@@ -29,11 +29,17 @@ namespace SWE_Final_Project
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Butt_GoToProf = new System.Windows.Forms.Button();
             this.regVehicle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.vehiclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._SWE_ProjectDataSet = new SWE_Final_Project._SWE_ProjectDataSet();
             this.label1 = new System.Windows.Forms.Label();
+            this.vehiclesTableAdapter = new SWE_Final_Project._SWE_ProjectDataSetTableAdapters.VehiclesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiclesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._SWE_ProjectDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // Butt_GoToProf
@@ -58,11 +64,27 @@ namespace SWE_Final_Project
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(175, 104);
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.Location = new System.Drawing.Point(140, 100);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(569, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(637, 315);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // vehiclesBindingSource
+            // 
+            this.vehiclesBindingSource.DataMember = "Vehicles";
+            this.vehiclesBindingSource.DataSource = this._SWE_ProjectDataSet;
+            // 
+            // _SWE_ProjectDataSet
+            // 
+            this._SWE_ProjectDataSet.DataSetName = "_SWE_ProjectDataSet";
+            this._SWE_ProjectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -73,6 +95,10 @@ namespace SWE_Final_Project
             this.label1.Size = new System.Drawing.Size(187, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Current Vehicles";
+            // 
+            // vehiclesTableAdapter
+            // 
+            this.vehiclesTableAdapter.ClearBeforeFill = true;
             // 
             // MyVehiclesForm
             // 
@@ -85,7 +111,10 @@ namespace SWE_Final_Project
             this.Controls.Add(this.Butt_GoToProf);
             this.Name = "MyVehiclesForm";
             this.Text = "My Vehicles";
+            this.Load += new System.EventHandler(this.MyVehiclesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiclesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._SWE_ProjectDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +126,8 @@ namespace SWE_Final_Project
         private System.Windows.Forms.Button regVehicle;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private _SWE_ProjectDataSet _SWE_ProjectDataSet;
+        private System.Windows.Forms.BindingSource vehiclesBindingSource;
+        private _SWE_ProjectDataSetTableAdapters.VehiclesTableAdapter vehiclesTableAdapter;
     }
 }

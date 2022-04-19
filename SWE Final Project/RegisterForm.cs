@@ -49,20 +49,35 @@ namespace SWE_Final_Project
             SqlDataAdapter adapter = new SqlDataAdapter();
             String sql;
 
+            //credentials:
+
             string regUsername = regUserBox.Text;
             string regPassword = regPassBox.Text;
 
             
-            sql = $"Insert into Users (Username, Password) values('{regUsername}', '{regPassword}')";
+            sql = $"Insert into Users (Username, Password, Points) values('{regUsername}', '{regPassword}', 0)";
 
             command = new SqlCommand(sql, cnn);
 
             adapter.InsertCommand = new SqlCommand(sql, cnn);
-            adapter.InsertCommand.ExecuteNonQuery();
-
+            try
+            {
+                adapter.InsertCommand.ExecuteNonQuery();
+                command.Dispose();
+                cnn.Close();
+                this.Hide();
+            }
+            catch(System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Username is already taken. Try again.");
+                regUserBox.Clear();
+                regPassBox.Clear();
+            }
+         
+            /*
             command.Dispose();
             cnn.Close();
-            this.Hide();
+            this.Hide();*/
         }
     }
 }

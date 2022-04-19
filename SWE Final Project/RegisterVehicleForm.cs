@@ -40,23 +40,33 @@ namespace SWE_Final_Project
             string make = vMake.Text;
             string model = vModel.Text;
             string color = vColor.Text;
+            string year = vYear.Text;
 
 
-            sql = $"Insert into Vehicles (License, Make, Model, Color, Username) values('{plate}', '{make}', '{model}', '{color}', '{LoginForm.profileName}')";
+            sql = $"Insert into Vehicles (License, Make, Model, Color, Username, Year) values('{plate}', '{make}', '{model}', '{color}', '{LoginForm.profileName}', '{year}')";
 
             command = new SqlCommand(sql, cnn);
 
             adapter.InsertCommand = new SqlCommand(sql, cnn);
 
             //Add a try/catch block here for the exception where two vehicles with the same license plate are entered.
-            adapter.InsertCommand.ExecuteNonQuery();
+            
 
-            command.Dispose();
-            cnn.Close();
-            this.Hide();
-            MyVehiclesForm vehicForm = new MyVehiclesForm();
-            vehicForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
-            vehicForm.Show(); //Show Prof form
+            try
+            {
+                adapter.InsertCommand.ExecuteNonQuery();
+                command.Dispose();
+                cnn.Close();
+                this.Hide();
+                MyVehiclesForm vehicForm = new MyVehiclesForm();
+                vehicForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
+                vehicForm.Show(); //Show Prof form
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("License Plate is already registered. Try again.");
+                licensePlate.Clear();
+            }
         }
 
         //Return to Profile

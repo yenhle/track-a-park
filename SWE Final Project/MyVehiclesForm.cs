@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,30 @@ namespace SWE_Final_Project
             RegisterVehicleForm rVehicForm = new RegisterVehicleForm();
             rVehicForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
             rVehicForm.Show(); //Show Prof form
+        }
+
+        private void MyVehiclesForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_SWE_ProjectDataSet.Vehicles' table. You can move, or remove it, as needed.
+            this.vehiclesTableAdapter.Fill(this._SWE_ProjectDataSet.Vehicles);
+
+
+
+            string connectionString = @"Data Source= localhost\SQLEXPRESS; Initial Catalog=SWE-Project; Trusted_Connection=True;";
+       
+            SqlConnection cnn = new SqlConnection(connectionString);
+            SqlDataAdapter sda = new SqlDataAdapter($"Select * from Vehicles where Username = '{LoginForm.profileName}'", cnn);
+
+            DataTable data = new DataTable();
+            sda.Fill(data);
+
+            dataGridView1.DataSource = data;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

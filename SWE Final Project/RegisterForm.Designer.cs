@@ -79,9 +79,9 @@ namespace SWE_Final_Project
             // Butt_Register
             // 
             this.Butt_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.Butt_Register.Location = new System.Drawing.Point(301, 329);
+            this.Butt_Register.Location = new System.Drawing.Point(300, 323);
             this.Butt_Register.Name = "Butt_Register";
-            this.Butt_Register.Size = new System.Drawing.Size(144, 47);
+            this.Butt_Register.Size = new System.Drawing.Size(139, 47);
             this.Butt_Register.TabIndex = 6;
             this.Butt_Register.Text = "Register";
             this.Butt_Register.UseVisualStyleBackColor = true;

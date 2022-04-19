@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,33 @@ namespace SWE_Final_Project
         public ProfileForm()
         {
             InitializeComponent();
+            string connectionString = @"Data Source= localhost\SQLEXPRESS; Initial Catalog=SWE-Project; Trusted_Connection=True;";
+
+            SqlConnection cnn = new SqlConnection(connectionString);
+            cnn.Open();
+            /*SqlDataAdapter sda = new SqlDataAdapter($"Select Points from Users where Username = '{LoginForm.profileName}'", cnn);
+
+            currentPoints.Text = sda.ToString();
+            */
+
+
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql, Output = "";
+
+            sql = $"Select Points from Users where Username = '{LoginForm.profileName}'";
+
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                Output = Output + dataReader.GetValue(0);
+            }
+
+            currentPoints.Text = Output;
+            cnn.Close();
+
         }
 
         private void Butt_MyVehicles_Click(object sender, EventArgs e)

@@ -33,6 +33,7 @@ namespace SWE_Final_Project
             this.Butt_MyVehicles = new System.Windows.Forms.Button();
             this.Butt_ChkForParking = new System.Windows.Forms.Button();
             this.Lb_CurrentPoints = new System.Windows.Forms.Label();
+            this.currentPoints = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Butt_MyVehicles
@@ -63,15 +64,26 @@ namespace SWE_Final_Project
             this.Lb_CurrentPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lb_CurrentPoints.Location = new System.Drawing.Point(24, 25);
             this.Lb_CurrentPoints.Name = "Lb_CurrentPoints";
-            this.Lb_CurrentPoints.Size = new System.Drawing.Size(127, 20);
+            this.Lb_CurrentPoints.Size = new System.Drawing.Size(114, 20);
             this.Lb_CurrentPoints.TabIndex = 4;
-            this.Lb_CurrentPoints.Text = "Current Points: 0";
+            this.Lb_CurrentPoints.Text = "Current Points:";
+            // 
+            // currentPoints
+            // 
+            this.currentPoints.AutoSize = true;
+            this.currentPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPoints.Location = new System.Drawing.Point(135, 28);
+            this.currentPoints.Name = "currentPoints";
+            this.currentPoints.Size = new System.Drawing.Size(16, 16);
+            this.currentPoints.TabIndex = 5;
+            this.currentPoints.Text = "0";
             // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 209);
+            this.Controls.Add(this.currentPoints);
             this.Controls.Add(this.Lb_CurrentPoints);
             this.Controls.Add(this.Butt_ChkForParking);
             this.Controls.Add(this.Butt_MyVehicles);
@@ -87,5 +99,6 @@ namespace SWE_Final_Project
         private System.Windows.Forms.Button Butt_MyVehicles;
         private System.Windows.Forms.Button Butt_ChkForParking;
         private System.Windows.Forms.Label Lb_CurrentPoints;
+        private System.Windows.Forms.Label currentPoints;
     }
 }

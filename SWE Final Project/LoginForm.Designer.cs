@@ -114,11 +114,11 @@ namespace SWE_Final_Project
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(183, 325);
+            this.label1.Location = new System.Drawing.Point(173, 325);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "No acc? Register!";
+            this.label1.Text = "No acccount? Register!";
             // 
             // usersTableAdapter
             // 
