@@ -180,6 +180,7 @@ namespace SWE_Final_Project
             this.Controls.Add(this.CHK_A1);
             this.Name = "Lot_A_Form";
             this.Text = "Lot_A_Form";
+            this.Load += new System.EventHandler(this.Lot_A_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

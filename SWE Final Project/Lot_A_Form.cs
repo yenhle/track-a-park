@@ -166,5 +166,10 @@ namespace SWE_Final_Project
         {
             MessageBox.Show(Availablelot().ToString());
         }
+
+        private void Lot_A_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

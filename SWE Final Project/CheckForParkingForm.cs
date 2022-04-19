@@ -47,7 +47,7 @@ namespace SWE_Final_Project
         private void button2_Click(object sender, EventArgs e)
         {
             // Change the Lotfor # here (Lot2_Form())
-            Lot_A_Form F = new Lot_A_Form();
+            Lot_B_Form F = new Lot_B_Form();
 
             //F.Availablelot();
             MessageBox.Show(F.Availablelot().ToString());
@@ -56,7 +56,7 @@ namespace SWE_Final_Project
         private void button3_Click(object sender, EventArgs e)
         {
             // Change the Lotfor # here (Lot3_Form())
-            Lot_A_Form F = new Lot_A_Form();
+            Lot_C_Form F = new Lot_C_Form();
 
             //F.Availablelot();
             MessageBox.Show(F.Availablelot().ToString());
@@ -65,7 +65,7 @@ namespace SWE_Final_Project
         private void button4_Click(object sender, EventArgs e)
         {
             // Change the Lotfor # here (Lot4_Form())
-            Lot_A_Form F = new Lot_A_Form();
+            Lot_D_Form F = new Lot_D_Form();
 
             //F.Availablelot();
             MessageBox.Show(F.Availablelot().ToString());
