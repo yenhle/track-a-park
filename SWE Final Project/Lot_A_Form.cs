@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SWE_Final_Project
 {
-    public partial class Lot1_Form : Form
+    public partial class Lot_A_Form : Form
     {
-        public Lot1_Form()
+        public Lot_A_Form()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if(checkBox1.Checked)
+            else if(CHK_A1.Checked)
             {
                 capacityfull++;
             }
@@ -37,7 +37,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox2.Checked)
+            else if (CHK_A2.Checked)
             {
                 capacityfull++;
             }
@@ -50,7 +50,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox3.Checked)
+            else if (CHK_A3.Checked)
             {
                 capacityfull++;
             }
@@ -63,7 +63,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox4.Checked)
+            else if (CHK_A4.Checked)
             {
                 capacityfull++;
             }
@@ -76,7 +76,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox5.Checked)
+            else if (CHK_A5.Checked)
             {
                 capacityfull++;
             }
@@ -89,7 +89,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox6.Checked)
+            else if (CHK_A6.Checked)
             {
                 capacityfull++;
             }
@@ -102,7 +102,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox7.Checked)
+            else if (CHK_A7.Checked)
             {
                 capacityfull++;
             }
@@ -115,7 +115,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox8.Checked)
+            else if (CHK_A8.Checked)
             {
                 capacityfull++;
             }
@@ -128,7 +128,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox9.Checked)
+            else if (CHK_A9.Checked)
             {
                 capacityfull++;
             }
@@ -141,7 +141,7 @@ namespace SWE_Final_Project
                 MessageBox.Show("The Lot is current at Capacity. Please Come again later");
 
             }
-            else if (checkBox10.Checked)
+            else if (CHK_A10.Checked)
             {
                 capacityfull++;
             }

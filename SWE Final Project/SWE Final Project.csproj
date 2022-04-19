@@ -64,29 +64,29 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lot1_Form.cs">
+    <Compile Include="Lot_A_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lot1_Form.Designer.cs">
-      <DependentUpon>Lot1_Form.cs</DependentUpon>
+    <Compile Include="Lot_A_Form.Designer.cs">
+      <DependentUpon>Lot_A_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lot2_Form.cs">
+    <Compile Include="Lot_B_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lot2_Form.Designer.cs">
-      <DependentUpon>Lot2_Form.cs</DependentUpon>
+    <Compile Include="Lot_B_Form.Designer.cs">
+      <DependentUpon>Lot_B_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lot3_Form.cs">
+    <Compile Include="Lot_C_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lot3_Form.Designer.cs">
-      <DependentUpon>Lot3_Form.cs</DependentUpon>
+    <Compile Include="Lot_C_Form.Designer.cs">
+      <DependentUpon>Lot_C_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lot4_Form.cs">
+    <Compile Include="Lot_D_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lot4_Form.Designer.cs">
-      <DependentUpon>Lot4_Form.cs</DependentUpon>
+    <Compile Include="Lot_D_Form.Designer.cs">
+      <DependentUpon>Lot_D_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="MyVehiclesForm.cs">
       <SubType>Form</SubType>
@@ -119,8 +119,17 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lot1_Form.resx">
-      <DependentUpon>Lot1_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Lot_A_Form.resx">
+      <DependentUpon>Lot_A_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lot_B_Form.resx">
+      <DependentUpon>Lot_B_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lot_C_Form.resx">
+      <DependentUpon>Lot_C_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lot_D_Form.resx">
+      <DependentUpon>Lot_D_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyVehiclesForm.resx">
       <DependentUpon>MyVehiclesForm.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SWE_Final_Project
 {
-    public partial class Lot2_Form : Form
+    public partial class Lot_B_Form : Form
     {
-        public Lot2_Form()
+        public Lot_B_Form()
         {
             InitializeComponent();
         }
