@@ -76,6 +76,7 @@ namespace SWE_Final_Project
             // 
             this.passBox.Location = new System.Drawing.Point(176, 203);
             this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
             this.passBox.Size = new System.Drawing.Size(100, 20);
             this.passBox.TabIndex = 3;
             // 
