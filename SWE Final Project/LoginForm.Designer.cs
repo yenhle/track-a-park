@@ -40,25 +40,30 @@ namespace SWE_Final_Project
             this.Butt_Register = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.usersTableAdapter = new SWE_Final_Project._SWE_ProjectDataSetTableAdapters.UsersTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._SWE_ProjectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LB_Username
             // 
             this.LB_Username.AutoSize = true;
-            this.LB_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.LB_Username.Location = new System.Drawing.Point(171, 78);
+            this.LB_Username.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Username.ForeColor = System.Drawing.Color.Gray;
+            this.LB_Username.Location = new System.Drawing.Point(207, 202);
+            this.LB_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Username.Name = "LB_Username";
-            this.LB_Username.Size = new System.Drawing.Size(113, 26);
+            this.LB_Username.Size = new System.Drawing.Size(126, 34);
             this.LB_Username.TabIndex = 0;
             this.LB_Username.Text = "Username";
             // 
             // userBox
             // 
-            this.userBox.Location = new System.Drawing.Point(176, 117);
+            this.userBox.Location = new System.Drawing.Point(207, 246);
+            this.userBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userBox.Name = "userBox";
-            this.userBox.Size = new System.Drawing.Size(100, 20);
+            this.userBox.Size = new System.Drawing.Size(193, 22);
             this.userBox.TabIndex = 1;
             this.userBox.TextChanged += new System.EventHandler(this.userBox_TextChanged);
             // 
@@ -74,28 +79,36 @@ namespace SWE_Final_Project
             // 
             // passBox
             // 
-            this.passBox.Location = new System.Drawing.Point(176, 203);
+            this.passBox.Location = new System.Drawing.Point(207, 331);
+            this.passBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passBox.Name = "passBox";
             this.passBox.PasswordChar = '*';
-            this.passBox.Size = new System.Drawing.Size(100, 20);
+            this.passBox.Size = new System.Drawing.Size(193, 22);
             this.passBox.TabIndex = 3;
             // 
             // LB_Password
             // 
             this.LB_Password.AutoSize = true;
-            this.LB_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.LB_Password.Location = new System.Drawing.Point(171, 164);
+            this.LB_Password.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Password.ForeColor = System.Drawing.Color.Gray;
+            this.LB_Password.Location = new System.Drawing.Point(207, 287);
+            this.LB_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Password.Name = "LB_Password";
-            this.LB_Password.Size = new System.Drawing.Size(108, 26);
+            this.LB_Password.Size = new System.Drawing.Size(121, 34);
             this.LB_Password.TabIndex = 2;
             this.LB_Password.Text = "Password";
             // 
             // Butt_Login
             // 
-            this.Butt_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.Butt_Login.Location = new System.Drawing.Point(176, 256);
+            this.Butt_Login.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Butt_Login.FlatAppearance.BorderSize = 4;
+            this.Butt_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Butt_Login.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Butt_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Butt_Login.Location = new System.Drawing.Point(220, 386);
+            this.Butt_Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Butt_Login.Name = "Butt_Login";
-            this.Butt_Login.Size = new System.Drawing.Size(108, 47);
+            this.Butt_Login.Size = new System.Drawing.Size(169, 53);
             this.Butt_Login.TabIndex = 4;
             this.Butt_Login.Text = "Login";
             this.Butt_Login.UseVisualStyleBackColor = true;
@@ -103,10 +116,15 @@ namespace SWE_Final_Project
             // 
             // Butt_Register
             // 
-            this.Butt_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.Butt_Register.Location = new System.Drawing.Point(176, 341);
+            this.Butt_Register.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Butt_Register.FlatAppearance.BorderSize = 4;
+            this.Butt_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Butt_Register.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Butt_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Butt_Register.Location = new System.Drawing.Point(220, 482);
+            this.Butt_Register.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Butt_Register.Name = "Butt_Register";
-            this.Butt_Register.Size = new System.Drawing.Size(108, 47);
+            this.Butt_Register.Size = new System.Drawing.Size(169, 53);
             this.Butt_Register.TabIndex = 5;
             this.Butt_Register.Text = "Register";
             this.Butt_Register.UseVisualStyleBackColor = true;
@@ -115,9 +133,11 @@ namespace SWE_Final_Project
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(173, 325);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F);
+            this.label1.Location = new System.Drawing.Point(222, 453);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
+            this.label1.Size = new System.Drawing.Size(160, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "No acccount? Register!";
             // 
@@ -125,11 +145,23 @@ namespace SWE_Final_Project
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SWE_Final_Project.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(244, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 470);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(637, 578);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Butt_Register);
             this.Controls.Add(this.Butt_Login);
@@ -137,11 +169,13 @@ namespace SWE_Final_Project
             this.Controls.Add(this.LB_Password);
             this.Controls.Add(this.userBox);
             this.Controls.Add(this.LB_Username);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
             this.Text = "Login!";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._SWE_ProjectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,6 +193,7 @@ namespace SWE_Final_Project
         private _SWE_ProjectDataSet _SWE_ProjectDataSet;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private _SWE_ProjectDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
