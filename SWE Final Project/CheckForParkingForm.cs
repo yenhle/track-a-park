@@ -40,7 +40,7 @@ namespace SWE_Final_Project
            Lot_A_Form F = new Lot_A_Form();
 
             //F.Availablelot();
-            MessageBox.Show(F.Availablelot().ToString());
+            F.Availablelot();
 
         }
 
@@ -50,7 +50,7 @@ namespace SWE_Final_Project
             Lot_B_Form F = new Lot_B_Form();
 
             //F.Availablelot();
-            MessageBox.Show(F.Availablelot().ToString());
+            F.Availablelot();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace SWE_Final_Project
             Lot_C_Form F = new Lot_C_Form();
 
             //F.Availablelot();
-            MessageBox.Show(F.Availablelot().ToString());
+            F.Availablelot();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace SWE_Final_Project
             Lot_D_Form F = new Lot_D_Form();
 
             //F.Availablelot();
-            MessageBox.Show(F.Availablelot().ToString());
+            F.Availablelot();
         }
     }
 }
