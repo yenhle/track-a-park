@@ -12,22 +12,9 @@ namespace SWE_Final_Project
 {
     public partial class Lot_A_Form : Form
     {
-        int capacity = 10;
-        int capacityfull = 0;
-
         public Lot_A_Form()
         {
             InitializeComponent();
-            CHK_A1.Checked = false;
-            CHK_A2.Checked = false;
-            CHK_A3.Checked = false;
-            CHK_A4.Checked = false;
-            CHK_A5.Checked = false;
-            CHK_A6.Checked = false;
-            CHK_A7.Checked = false;
-            CHK_A8.Checked = false;
-            CHK_A9.Checked = false;
-            CHK_A10.Checked = false;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -160,26 +147,24 @@ namespace SWE_Final_Project
             }
         }
 
-        public void Availablelot()
+        public int Availablelot()
         {
             
-            if((capacityfull) == capacity)
+            if(capacityfull == capacity)
             {
                 MessageBox.Show("This Lot is currently full");
+                return 0;
             }
             else 
-            {
-                int temp = capacity - (capacityfull);
-                MessageBox.Show(temp.ToString());
-
+            { 
+                return capacity - capacityfull;
             }
 
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Availablelot();
+            MessageBox.Show(Availablelot().ToString());
         }
 
         private void Lot_A_Form_Load(object sender, EventArgs e)

@@ -58,7 +58,3 @@ C:\Users\Page\Source\Repos\track-a-park\SWE Final Project\obj\Debug\SWE Final Pr
 C:\Users\Page\Source\Repos\track-a-park\SWE Final Project\obj\Debug\SWE Final Project.csproj.CoreCompileInputs.cache
 C:\Users\Page\Source\Repos\track-a-park\SWE Final Project\obj\Debug\SWE Final Project.exe
 C:\Users\Page\Source\Repos\track-a-park\SWE Final Project\obj\Debug\SWE Final Project.pdb
-C:\Users\spark\source\repos\track-a-park\SWE Final Project\obj\Debug\SWE_Final_Project.Lot_A_Form.resources
-C:\Users\spark\source\repos\track-a-park\SWE Final Project\obj\Debug\SWE_Final_Project.Lot_B_Form.resources
-C:\Users\spark\source\repos\track-a-park\SWE Final Project\obj\Debug\SWE_Final_Project.Lot_C_Form.resources
-C:\Users\spark\source\repos\track-a-park\SWE Final Project\obj\Debug\SWE_Final_Project.Lot_D_Form.resources

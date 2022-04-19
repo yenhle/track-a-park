@@ -199,10 +199,8 @@ namespace SWE_Final_Project
         private System.Windows.Forms.CheckBox CHK_A9;
         private System.Windows.Forms.CheckBox CHK_A10;
 
-
-        
-        //int capacity = 10;
-        //int capacityfull = 0;
+        int capacity = 10;
+        int capacityfull = 0;
         private System.Windows.Forms.Button Butt_CHK_A;
     }
 
