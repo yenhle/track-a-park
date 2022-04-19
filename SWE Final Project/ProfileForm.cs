@@ -60,5 +60,14 @@ namespace SWE_Final_Project
             checkParkForm.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
             checkParkForm.Show(); //Show Prof form
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm.profileName = null;
+            this.Hide(); // Hides the current form.
+            LoginForm L = new LoginForm();
+            L.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
+            L.Show(); //Show Prof form
+        }
     }
 }
