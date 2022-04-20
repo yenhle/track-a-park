@@ -79,5 +79,10 @@ namespace SWE_Final_Project
             cnn.Close();
             this.Hide();*/
         }
+
+        private void regPassBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

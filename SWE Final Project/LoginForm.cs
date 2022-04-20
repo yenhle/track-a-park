@@ -107,5 +107,10 @@ namespace SWE_Final_Project
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

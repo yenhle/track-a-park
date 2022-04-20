@@ -69,5 +69,10 @@ namespace SWE_Final_Project
             L.Closed += (s, args) => this.Close(); //Will close the first form if profile is closed
             L.Show(); //Show Prof form
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
