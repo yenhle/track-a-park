@@ -67,5 +67,10 @@ namespace SWE_Final_Project
             F.Closed += (s, args) => this.Close();
             F.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

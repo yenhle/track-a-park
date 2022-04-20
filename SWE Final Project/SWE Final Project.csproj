@@ -180,5 +180,26 @@
   <ItemGroup>
     <None Include="Resources\logo.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkCar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkCar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orangeCar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkCar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orangeCar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
